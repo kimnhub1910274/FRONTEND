@@ -6,7 +6,7 @@
                 <router-link :to="{name: 'contactbook'}" class="nav-link">
                     Danh bạ
                     <i class="fas fa-address-book"></i>
-                </router-link>/>
+                </router-link>
             </li>
         </div>
     </nav>
