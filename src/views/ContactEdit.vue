@@ -14,7 +14,7 @@
     import ContactService from "@/services/contact.service";
     export default {
         components: {
-            ContactForm,
+            ContactForm
         },
         props: {
             id: { type: String, required: true },

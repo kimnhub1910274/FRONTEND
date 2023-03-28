@@ -20,13 +20,14 @@
                     <i class="fa-solid fa-rotate-right"></i> Làm mới
                 </button>
                 <button class="btn btn-sm btn-success" @click="goToAddContact">
+                    
                     <i class="fas fa-plus"></i> Thêm mới
                 </button>
                 <button
                     class="btn btn-sm btn-danger"
                     @click="removeAllContacts"
                 >
-                <i class="fa-regular fa-trash"></i> Xóa tất cả
+                <i class="fas fa-trash"></i> Xóa tất cả
                 </button>
             </div>              
         </div>
@@ -90,7 +91,7 @@
             filteredContacts() {
                 if (!this.searchText) return this.contacts;
                 return this.contacts.filter((_contact, index) =>
-this.contactStrings[index].includes(this.searchText)
+                this.contactStrings[index].includes(this.searchText)
                 );
             },
             activeContact() {
@@ -124,8 +125,8 @@ this.contactStrings[index].includes(this.searchText)
                     }
                 }
             },
-            goToAddContact() {
-                this.$router.push({ name: "contact.add" });
+            async goToAddContact() {
+                this.$router.push({ name: "contact.create" });
             },
         },
         mounted() {
@@ -140,5 +141,6 @@ this.contactStrings[index].includes(this.searchText)
     .page {
     text-align: left;
     max-width: 750px;
+    margin: auto;
     }
 </style> 
