@@ -1,20 +1,25 @@
 <script>
-import AppHeader from "@/components/AppHeader.vue";
+import Header from "@/components/Header.vue";
+import Home from "@/components/Home.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components:{
-    AppHeader,
+    Header,
+    Home,
+    Footer,
+    
   },
 };
 </script>
 <template>
   <div id="app">
-    <AppHeader/>
+    <Header/>
     <div class="container mt-3">
       <router-view/>
-
-
     </div>
+
   </div>
+  <Footer/>
 </template>
 <style>
 .page {
